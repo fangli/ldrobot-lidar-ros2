@@ -2,7 +2,7 @@
 
 <robot name="ldlidar">
 
-    <link name="ldlidar_base">
+    <link name="base_laser">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
@@ -14,12 +14,12 @@
         </visual>
     </link>
 
-    <joint name="ldlidar_link_joint" type="fixed">
-        <parent link="ldlidar_base"/>
-        <child link="ldlidar_link"/>
+    <joint name="base_link_joint" type="fixed">
+        <parent link="base_laser"/>
+        <child link="base_link"/>
         <origin xyz="0 0 0.02745" rpy="0 0 0" />
     </joint>
 
-    <link name="ldlidar_link" />
+    <link name="base_link" />
 
 </robot>

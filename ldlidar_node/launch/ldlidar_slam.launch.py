@@ -93,7 +93,7 @@ def generate_launch_description():
                 "use_sim_time": use_sim_time,
             },
         ],
-        remappings=[("/scan", "/ldlidar_node/scan")],
+        # remappings=[("/scan", "/ldlidar_node/scan")],
     )
 
     # Include LDLidar launch
@@ -110,7 +110,7 @@ def generate_launch_description():
         executable="static_transform_publisher",
         name="static_transform_publisher",
         output="screen",
-        arguments=["0", "0", "0", "0", "0", "0", "odom", "ldlidar_base"],
+        arguments=["0", "0", "0", "0", "0", "0", "odom", "base_laser"],
     )
 
     # RVIZ2 settings
@@ -122,7 +122,6 @@ def generate_launch_description():
     rviz2_node = Node(
         package="rviz2",
         executable="rviz2",
-        name="rviz2",
         output="screen",
         arguments=[["-d"], [rviz2_config]],
     )

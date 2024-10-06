@@ -69,12 +69,12 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        ldlidar_base:
+        base_laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ldlidar_link:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -91,9 +91,9 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        ldlidar_base:
+        base_laser:
           Value: true
-        ldlidar_link:
+        base_link:
           Value: true
       Marker Scale: 0.25
       Name: TF
@@ -101,8 +101,8 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        ldlidar_base:
-          ldlidar_link:
+        base_laser:
+          base_link:
             {}
       Update Interval: 0
       Value: true
@@ -136,14 +136,14 @@ Visualization Manager:
         Filter size: 1
         History Policy: System Default
         Reliability Policy: System Default
-        Value: /ldlidar_node/scan
+        Value: /scan
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
-    Fixed Frame: ldlidar_base
+    Fixed Frame: base_laser
     Frame Rate: 30
   Name: root
   Tools:

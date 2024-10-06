@@ -83,7 +83,7 @@ def launch_setup(container_prefix, container_sigterm_timeout):
             'monitor_index': 0,
             'monitor_data_format': 'sensor_msgs/msg/LaserScan',
         }],
-        remappings=[('output', 'ldlidar_node/scan')]
+        remappings=[('output', 'scan')]
     )
 
     composable_node_container = ComposableNodeContainer(
