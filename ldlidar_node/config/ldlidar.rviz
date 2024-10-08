@@ -69,12 +69,12 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_laser:
+        base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_link:
+        base_laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -91,9 +91,9 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_laser:
-          Value: true
         base_link:
+          Value: true
+        base_laser:
           Value: true
       Marker Scale: 0.25
       Name: TF
@@ -101,8 +101,8 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        base_laser:
-          base_link:
+        base_link:
+          base_laser:
             {}
       Update Interval: 0
       Value: true
@@ -143,7 +143,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
-    Fixed Frame: base_laser
+    Fixed Frame: base_link
     Frame Rate: 30
   Name: root
   Tools:

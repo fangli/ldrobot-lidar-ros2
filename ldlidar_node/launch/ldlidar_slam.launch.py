@@ -82,7 +82,6 @@ def generate_launch_description():
     slam_toolbox_node = LifecycleNode(
         package="slam_toolbox",
         executable="async_slam_toolbox_node",
-        namespace="",
         name="slam_toolbox",
         output="screen",
         parameters=[
@@ -110,7 +109,7 @@ def generate_launch_description():
         executable="static_transform_publisher",
         name="static_transform_publisher",
         output="screen",
-        arguments=["0", "0", "0", "0", "0", "0", "odom", "base_laser"],
+        arguments=["0", "0", "0", "0", "0", "0", "odom", "base_link"],
     )
 
     # RVIZ2 settings

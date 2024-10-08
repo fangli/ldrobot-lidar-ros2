@@ -135,7 +135,7 @@ private:
   int _bins = 455;                // Fixed number of bins
   double _rangeMin = 0.03;        // Minimum range
   double _rangeMax = 25.0;        // Maximum range
-  std::string _frameId = "base_link";
+  std::string _frameId = "base_laser";
   // <---- Parameters
 
   // Processing
