@@ -82,6 +82,7 @@ def generate_launch_description():
     slam_toolbox_node = LifecycleNode(
         package="slam_toolbox",
         executable="async_slam_toolbox_node",
+        namespace="",
         name="slam_toolbox",
         output="screen",
         parameters=[
