@@ -132,7 +132,7 @@ private:
   bool _enableAngleCrop = true;   // Enable angle cropping
   double _angleCropMin = 90.0;    // Angle cropping minimum value
   double _angleCropMax = 270.0;   // Angle cropping maximum value
-  int _bins = 455;                // Fixed number of bins
+  int _bins = 500;                // Fixed number of bins
   double _rangeMin = 0.03;        // Minimum range
   double _rangeMax = 25.0;        // Maximum range
   std::string _frameId = "base_laser";
