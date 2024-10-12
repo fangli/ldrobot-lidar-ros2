@@ -53,7 +53,6 @@ def generate_launch_description():
             '/launch/ldlidar.launch.py'
         ]),
         launch_arguments={
-            'node_name': 'ldlidar_node'
         }.items()
     )
 
