@@ -72,6 +72,13 @@ def generate_launch_description():
         arguments=[urdf]
     )
 
+    jsp_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='screen',
+    )
+
     # Define LaunchDescription variable
     ld = LaunchDescription()
 
@@ -80,6 +87,7 @@ def generate_launch_description():
 
     # Launch Nav2 Lifecycle Manager
     ld.add_action(rsp_node)
+    ld.add_action(jsp_node)
 
     # LDLidar Lifecycle node
     ld.add_action(ldlidar_node)
