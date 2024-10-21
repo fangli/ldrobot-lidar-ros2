@@ -9,7 +9,7 @@
                 <box size="0.575 0.26 0.1" />
             </geometry>
             <material name="Cyan">
-                <color rgba="0.2 1.0 1.0 0.8"/>
+                <color rgba="0.203125 0.3125 0.74609375 0.9"/>
             </material>
         </visual>
     </link>
