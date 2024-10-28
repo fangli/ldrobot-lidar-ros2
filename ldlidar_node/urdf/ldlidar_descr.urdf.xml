@@ -8,7 +8,24 @@
                 <box size="0.575 0.26 0.1" />
             </geometry>
             <material name="Cyan">
-                <color rgba="0.203125 0.3125 0.74609375 0.9"/>
+                <color rgba="0.203125 0.3125 0.74609375 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="head_top_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="head_top"/>
+        <origin xyz="0.3 0 0.1875" rpy="0 0 0" />
+    </joint>
+
+    <link name="head_top">
+        <visual>
+            <geometry>
+                <box size="0.28125 0.2 0.085" />
+            </geometry>
+            <material name="head_top_mat">
+                <color rgba="0.0 1.0 0 0.9"/>
             </material>
         </visual>
     </link>
@@ -16,7 +33,7 @@
     <joint name="base_laser_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_laser"/>
-        <origin xyz="0.195 0 0.26" rpy="0 0 0" />
+        <origin xyz="0.195 0 0.23" rpy="0 0 0" />
     </joint>
 
     <link name="base_laser">
